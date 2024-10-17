@@ -20,6 +20,7 @@ class CustomerListCreateView(generics.ListCreateAPIView):
     serializer_class=CustomerSerializer
 
     authentication_classes=[authentication.TokenAuthentication]
+    # authentication_classes=[authentication.BasicAuthentication]
 
     permission_classes=[permissions.IsAdminUser]
 
